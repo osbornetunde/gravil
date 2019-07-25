@@ -1,0 +1,258 @@
+:root {
+    --text-color: #FF7008;
+    --default-font-size: 1.6rem;
+    --text-color-grey: #797979;
+}
+
+
+*,
+*::after,
+*::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: inherit;
+}
+
+html, body {
+    height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    box-sizing: border-box;
+    font-family: Roboto;
+   
+}
+
+
+.header {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(to right, rgba(255,255, 255, 0.12) 0%, rgba(255, 255, 255, 0.12) 100%), url('/img/7014.png');
+    background-size: cover;
+    background-position: top;
+    position: relative;
+}
+
+.nav {
+    padding: 0 14.5rem;
+}
+
+.nav__items {
+    display: flex;
+    border-bottom: 1px solid rgba(159, 159, 159, 0.33);
+    padding: 4.4rem;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.header__logo {
+    position: absolute;
+    top: 4.4rem;
+}
+.nav__list {
+    list-style: none;
+}
+
+.nav__link {
+    text-decoration: none;
+    color: #000;
+    font-size: var(--default-font-size);
+    padding:2rem;
+}
+
+ .nav__link:active, .nav__link:visited {
+    color: var(--text-color);
+    border-bottom: 2px solid var(--text-color);
+}
+
+.header__hero {
+    position: absolute;
+    top: 25rem;
+    right: 15rem;
+    text-align: left;
+    font-size: var(--default-font-size);
+    line-break: auto;
+    width: 25%;
+    line-height: 3.1rem
+}
+
+.text__bold  {
+    font-size: 4rem;
+    line-height: 4rem;
+    font-weight: 500;
+}
+
+.text__orange {
+    color: var(--text-color); 
+}
+
+.text__link {
+    margin-top: 4.1rem;
+    color: var(--text-color); 
+    text-decoration-color: var(--text-color); 
+    font-size: 2rem;
+}
+
+.trusted {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height:15vh;
+    background-color: #F8F8F8;
+    /* position: absolute; */
+    /* bottom:0; */
+    /* left: 0; */
+    width: 100%;
+}
+
+.trusted__text {
+    font-size: var(--default-font-size);
+    font-weight: 500;
+}
+
+.feature {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color:  #EAEAEA;
+    height: 50%;
+    width: 100%;
+}
+
+.feature__header {
+    text-align: center;
+    color: var(--text-color);
+    padding: 6rem 0 3rem 0;
+    font-size: 1.8rem;
+}
+
+.feature__header--bold {
+    font-size: 4rem;
+    font-weight: 700;
+    font-size: 1.8rem;
+    padding-bottom: 3rem;
+}
+
+.feature__pics {
+    height: 5rem;
+    width: 5rem;
+    padding-bottom: 2rem;
+
+}
+
+.features__header--sub, .started__header {
+    padding-bottom: 2rem;
+    font-weight: 600;
+    font-size: 1.8rem;
+}
+
+.features__options {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 3rem 12rem;
+}
+
+.features__option {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 33%;
+    
+}
+
+.features__option:not(:last-child) {
+    padding: 2rem;
+}
+
+.feature__text {
+    text-align: center;
+    line-height: 2rem;
+    padding: 0  6rem 6rem 6rem;
+    font-size: var(--default-font-size);
+    color: var(--text-color-grey);
+}
+
+.features__link {
+    color: #000;
+    display: inline-block;
+    text-align: center;
+    padding-top: 1.2rem;
+    font-size: var(--default-font-size);
+    padding-bottom: 6rem;
+}
+
+.features__link:hover {
+    color: var(--text-color);
+}
+
+.footer {
+    background-color: #F8F8F8;
+    display: flex;
+    padding: 4rem;
+    justify-content: space-around;
+    align-items: flex-start;
+    border-bottom: 1px solid rgba(159, 159, 159, 0.33);
+    margin-bottom: .5rem;
+}
+
+.started {
+    text-align: left;
+}
+
+.started ul {
+    list-style: none;
+    color: var(--text-color-grey);
+}
+
+.started li {
+    padding-bottom: 1.2rem;
+    
+}
+
+.started__text {
+    width: 50rem;
+    text-align: left;
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 1rem;
+}
+
+.started input {
+    border: 1px solid var(--text-color-grey);
+    outline: none;
+    /* width: 8rem; */
+    height: 4rem;
+    padding: 1rem;
+}
+
+input::placeholder {
+    color: var(--text-color-grey);
+}
+
+.button {
+    color: #fff;
+    background-color: var(--text-color);
+    border: none;
+    border-radius: 0px 5px 5px 0px;
+    width: 10rem;
+    height: 4rem;
+}
+
+.copyright {
+    color: var(--text-color-grey);
+    text-align: left;
+    padding: 3rem;
+}
+
+.copyright__orange {
+    color: var(--text-color);
+}
