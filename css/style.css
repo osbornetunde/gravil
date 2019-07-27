@@ -113,7 +113,12 @@ body {
 
 .trusted__text {
     font-size: var(--default-font-size);
-    font-weight: 500;
+    font-weight: 600;
+}
+
+.trusted__logo {
+    width: 11rem;
+    height: 3rem
 }
 
 .feature {
